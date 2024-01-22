@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class WizardController {
 
 
-    private WizardDao repository;
+    private final WizardDao repository;
 
     public WizardController(WizardDao repository) {
         this.repository = repository;
